@@ -41,23 +41,38 @@ This project works with **zero training**, **no custom datasets**, and **no fine
 ## 🧩 Project Structure
 
 vton_v7_7/
+
 │
+
 ├── app.py # Flask backend
+
 ├── pipeline.py # Core try-on pipeline
+
 ├── human_parsing.py # Garment segmentation
+
 ├── controlnet_utils.py # Pose extraction
+
 ├── face_utils.py # Face extraction & merging
+
 ├── config.py # Model & device config
 │
+
 ├── templates/
+
 │ └── index.html # Frontend UI
 │
+
 ├── static/
+
 │ └── results/ # Generated outputs
 │
+
 ├── uploads/ # Temporary uploads (ignored in git)
+
 ├── requirements.txt
+
 ├── LICENSE
+
 └── README.md
 
 
@@ -91,14 +106,14 @@ python app.py
 http://localhost:5000
 
 
-##⚠️ Known Limitations
+## ⚠️ Known Limitations
 
 Sleeve length cannot be fully changed without relaxing arm constraints.
 Lighting differences between person and garment images may cause minor color variance.
 Designed for single-person images only.
 These limitations are intentional to preserve identity and realism.
 
-##📜 License
+## 📜 License
 
 This project is licensed under the Apache License 2.0.
 You are free to use, modify, and distribute this project with proper attribution.
